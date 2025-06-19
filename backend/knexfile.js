@@ -8,11 +8,11 @@ module.exports = {
   development: {
     client: 'pg',
     connection: {
-      host: process.env.HOST_DB,
-      port: process.env.PORT_DB,
-      database: process.env.DB_NAME,
-      user: process.env.USER_DB,
-      password: process.env.PASSWORD,
+      host: "localhost",
+      port:5432 ,
+      database: "products",
+      user: "elmer",
+      password: "elmer1230",
     },
     migrations: {
       directory: './migrations'

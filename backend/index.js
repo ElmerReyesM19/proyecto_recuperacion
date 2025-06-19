@@ -8,4 +8,5 @@ app.get('/',(req,res)=>{
 
 app.listen(8000, ()=>{
     console.log('puerto ' + process.env.PORT)
+    console.log('database ' + process.env.DB_NAME)
 })
