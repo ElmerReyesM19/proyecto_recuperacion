@@ -8,7 +8,7 @@ app.use(express.json())
 app.post('/addProducto',addProducto)
 app.get('/totalProductos',getTotalProductos)
 
-app.listen(process.env.PORT, ()=>{
-    console.log('puerto ' + process.env.PORT)
+app.listen(5000,()=>{
+    console.log('servidor activo')
     
 })
