@@ -3,6 +3,7 @@ const db = require('./config/db');
 const app = express()
 const {addProducto} = require('./rutas/addProducto')
 require('dotenv').config();
+app.use(express.json())
 app.post('/addProducto',addProducto)
 
 app.listen(process.env.PORT, ()=>{

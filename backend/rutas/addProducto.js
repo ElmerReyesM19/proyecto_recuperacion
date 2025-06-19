@@ -1,3 +1,5 @@
+
+const db = require('../config/db')
 const addProducto = async (req, res)=>{
     const trx = await db.transaction();
 
@@ -17,7 +19,7 @@ const addProducto = async (req, res)=>{
     };
 
     // Insertar con transacción
-    await trx('products').insert(nuevoProducto);
+    await trx('productos').insert(nuevoProducto);
 
     await trx.commit(); // Confirmar transacción
 

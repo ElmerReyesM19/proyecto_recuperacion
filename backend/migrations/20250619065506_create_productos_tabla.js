@@ -3,7 +3,7 @@
  * @returns { Promise<void> }
  */
 exports.up = function(knex) {
- return knex.schema.createTable('products', table => {
+ return knex.schema.createTable('productos', table => {
     table.increments('id').primary();              // ID autoincremental
     table.string('codigo', 20).notNullable().unique(); // Código único
     table.string('nombre', 100).notNullable();     // Nombre del producto
