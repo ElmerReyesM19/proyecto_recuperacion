@@ -10,7 +10,7 @@ logs/
 
 # dotenv
 .env
-.env.*
+
 
 # Knex migrations temp
 migrations/*_lock
