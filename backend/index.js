@@ -6,7 +6,6 @@ app.get('/',(req,res)=>{
     res.send('probando')
 })
 
-
 app.listen(8000, ()=>{
     console.log('puerto ' + process.env.PORT)
 })
