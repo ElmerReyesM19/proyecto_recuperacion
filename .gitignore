@@ -1,0 +1,30 @@
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Logs
+logs/
+*.log
+
+# dotenv
+.env
+.env.*
+
+# Knex migrations temp
+migrations/*_lock
+
+# VSCode settings (opcional)
+.vscode/
+
+# Docker
+*.pid
+docker-compose.override.yml
+
+# Binaries / OS
+.DS_Store
+Thumbs.db
+
+# Postgres volume (si llegas a montar alguno localmente)
+postgres_data/
