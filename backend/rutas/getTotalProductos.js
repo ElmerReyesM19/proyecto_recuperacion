@@ -2,7 +2,7 @@ const db = require('../config/db')
 const getTotalProductos = async (req,res)=>{
     try{
 
-        const result = await db('productos').select('*')
+        const result = await db('productos').count('id as total');
 
         return res.status(200).json(result)
 
