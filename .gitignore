@@ -28,3 +28,4 @@ Thumbs.db
 
 # Postgres volume (si llegas a montar alguno localmente)
 postgres_data/
+data/
