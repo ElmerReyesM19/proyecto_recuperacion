@@ -8,7 +8,7 @@ module.exports = {
   development: {
     client: 'pg',
     connection: {
-      host: "db",
+      host: "localhost",
       port:5432 ,
       database: "products",
       user: "elmer",
